@@ -21,21 +21,24 @@
             text-align: center;
         }
 
-        /* * {
+        * {
             outline: 1px dotted red;
-            } */
+            }
     </style>
 
 </head>
 
 <body>
     <div class="container">
-        <h1 class="text-center mb-3 ">Juego pokemon</h1>
-        <label for="usr">Cantidad:</label>
-        <input type="text" class="form-control mb-3" placeholder="0" id="usr">
-        <button class=" boton col-3 mx-auto auto boton btn btn-primary mb-3">Click para empezar</button>
-        <div id="pokemon">
+        <div class="row">
 
+            <h1 class="text-center mb-3 ">Juego pokemon</h1>
+            <label for="usr">Cantidad:</label>
+            <input type="text" class="form-control mb-3" placeholder="0" id="usr">
+            <button class=" boton  col col-sm-12 mx-auto auto boton btn btn-primary mb-3">Click para empezar</button>
+            <div class="col-12 text-center" id="pokemon">
+    
+            </div>
         </div>
     </div>
 
@@ -88,6 +91,10 @@
                     // console.log(res.height);
                     let altura = res.height;
                     // console.log(res.types[0].type.name);
+
+
+
+
                     let habilidad = res.types[0].type.name;
                     // console.log(res.weight);
                     let peso = res.weight;
